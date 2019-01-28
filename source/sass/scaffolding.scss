@@ -12,6 +12,42 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'CeraRoundPro';
+  src: url('../fonts/PT%20Root%20UI_Bold.eot');
+  src:
+    url('../fonts/PT%20Root%20UI_Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PT%20Root%20UI_Bold.woff2') format('woff2'),
+    url('../fonts/PT%20Root%20UI_Bold.woff') format('woff'),
+    url('../fonts/PT%20Root%20UI_Bold.ttf') format('truetype'),
+    url('../fonts/PT%20Root%20UI_Bold.svg#PTRootUIWeb-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CeraRoundPro';
+  src: url('../fonts/PT%20Root%20UI_Light.eot');
+  src:
+    url('../fonts/PT%20Root%20UI_Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PT%20Root%20UI_Light.woff2') format('woff2'),
+    url('../fonts/PT%20Root%20UI_Light.woff') format('woff'),
+    url('../fonts/PT%20Root%20UI_Light.ttf') format('truetype'),
+    url('../fonts/PT%20Root%20UI_Light.svg#PTRootUIWeb-Light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CeraRoundPro';
+  src: url('../fonts/PT%20Root%20UI_Medium.eot');
+  src:
+    url('../fonts/PT%20Root%20UI_Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PT%20Root%20UI_Medium.woff2') format('woff2'),
+    url('../fonts/PT%20Root%20UI_Medium.woff') format('woff'),
+    url('../fonts/PT%20Root%20UI_Medium.ttf') format('truetype'),
+    url('../fonts/PT%20Root%20UI_Medium.svg#PTRootUIWeb-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -108,10 +144,11 @@ a {
   display: inline-block;
   min-height: 60px;
   text-decoration: none;
-  padding: 20px 35px;
-  font-size: 16px;
+  padding: 18px 35px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
   max-width: 100%;
   text-align: center;
   vertical-align: center;

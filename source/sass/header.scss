@@ -24,7 +24,9 @@
   display: none;
   flex: none;
   width: 200px;
-  padding: 20px 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 18px 30px;
   white-space: nowrap;
   background-color: transparent;
   border: 2px solid #5489c3;
@@ -57,5 +59,7 @@
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
+    position: relative;
+    top: 2px;
   }
 }
