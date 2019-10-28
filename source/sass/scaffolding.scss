@@ -69,6 +69,7 @@ body {
   color: $base-color;
   font-weight: 400;
   background-color: $bg;
+  box-sizing: border-box;
   @media screen and (min-width: $vtablet-width) {
     font-size: 15px;
     line-height: 24px;
@@ -166,6 +167,22 @@ a {
   }
   &:focus {
     outline: none;
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  margin-top: 0;
+  letter-spacing: 1px;  
+  text-align: center;
+  @media screen and (min-width: $vtablet-width) {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 26px;    
+    text-align: left;
+  }
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;    
   }
 }
 

@@ -1,0 +1,28 @@
+.dairy {
+  background-position: 0 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/dairy_bg-2x.png");
+  
+  padding-top: 10px;
+  padding-bottom: 60px;
+  margin-bottom: 70px;
+  @media screen and (min-width: $vtablet-width) {
+    background-position: 50% 100%;   
+    padding-bottom: 80px; 
+  }
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 130px; 
+    background-size: contain;
+  }
+}
+.dairy__title {
+  @media screen and (min-width: $vtablet-width) {
+      margin-top: 70px;
+    }
+  @media screen and (min-width: $tablet-width) {
+      margin-top: 150px;
+      margin-bottom: 105px;
+    }
+}
+

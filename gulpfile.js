@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var typograf = require("typograf");
 var server = require("browser-sync").create();
+var ghPages = require('gh-pages');
+var path = require('path');
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -37,3 +39,8 @@ gulp.task('typograf', function() {
         .pipe(typograf({ locale: ['ru', 'en-US'] }))
         .pipe(gulp.dest('source/test'));
 });
+
+gulp.task('deploy', function() {
+  ghPages.publish(path.join(process.cwd(), './source'));
+});
+
