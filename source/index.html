@@ -18,11 +18,11 @@ cale=1">
       <div class="header__logo logo"><a href="#" class="go_to" data-href="#first-screen"><img src="img/logo.png" srcset="img/logo-2x.png 2x" width="200" alt=""></a></div>
       <ul class="header__menu mainmenu">
         <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#intro">О сервисе</a></li>
-        <li class="mainmenu__item"><a href="#" class="mainmenu__link">Функции</a></li>
-        <li class="mainmenu__item marked"><a href="#" class="mainmenu__link">Возможности</a></li>
-        <li class="mainmenu__item"><a href="#" class="mainmenu__link">Партнеры</a></li>
+        <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#functions">Функции</a></li>
+        <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#oppotunities">Возможности</a></li>
+        <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#specialists">Специалистам</a></li>
       </ul>
-      <button class="header__button button" type="button">Оставить заявку</button>
+      <button type="button" class="header__button button go_to" data-href="#subscribe">Оставить заявку</button>
       <div class="header__burger">
         <button type="button" class="header__burger burger">
           <span class="burger__line"></span>
@@ -69,7 +69,7 @@ cale=1">
         </div>
       </div>
     </section>
-    <section class="functions">
+    <section class="functions" id="functions">
       <div class="page-wrapper wow fadeInUp" data-wow-duration="2s">
         <h2 class="functions__title section-title">Функции приложения</h2>
         <div class="functions__items">
@@ -106,7 +106,7 @@ cale=1">
         </div>
       </div>
     </section>
-    <section class="dairy">
+    <section class="dairy" id="oppotunities">
       <div class="page-wrapper wow fadeInUp" data-wow-duration="2s">
         <h2 class="dairy__title section-title">Ведите персональный дневник мониторинга здоровья</h2>
         <dl class="dairy__list numed-list">
@@ -121,43 +121,51 @@ cale=1">
         </dl>
       </div>
     </section>
-    <section class="specialists">
-      <div class="page-wrapper wow fadeInUp" data-wow-duration="2s">
+    <section class="specialists" id="specialists">
+      <div class="page-wrapper page-wrapper--specialists wow fadeInUp" data-wow-duration="2s">
         <div class="specialists__image"><img src="img/specialists-image.png" srcset="img/specialists-image-2x.png 2x" alt="Графики"></div>
-        <h2 class="specialists__title section-title">Специалистам</h2>
-        <ul class="dairy__items">
-          <li class="dairy__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
-          <li class="dairy__item">Наблюдение за динамикой изменения основных медицинских показателей</li>
-          <li class="dairy__item">Наличие алгоритмов автоматического анализа поступающей информации</li>
-          <li class="dairy__item">Индивидуальная система уведомлений об изменении состояния каждого пациента</li>
-          <li class="dairy__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в процесс
-            профилактики, лечения и реабилитации.</li>
-        </ul>
+        <div class="specialists__text">
+          <h2 class="specialists__title section-title">Специалистам</h2>
+          <ul class="dairy__items">
+            <li class="dairy__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
+            <li class="dairy__item">Наблюдение за динамикой изменения основных медицинских показателей</li>
+            <li class="dairy__item">Наличие алгоритмов автоматического анализа поступающей информации</li>
+            <li class="dairy__item">Индивидуальная система уведомлений об изменении состояния каждого пациента</li>
+            <li class="dairy__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в процесс
+              профилактики, лечения и реабилитации.</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe" id="subscribe">
       <div class="page-wrapper wow fadeInUp" data-wow-duration="2s">
-        <h2 class="specialists__title section-title">Получите бесплатный доступ к&nbsp;«Дневнику здоровья»</h2>
-        <div class="subscribe__text">Оставьте свою электронную почту и&nbsp;вы&nbsp;узнаете о&nbsp;запуске данного сервиса первым!</div>
+        <h2 class="subscribe__title section-title">Получите бесплатный доступ к&nbsp;«Дневнику здоровья»</h2>
+        <div class="subscribe__text">Оставьте свою электронную почту, и&nbsp;вы&nbsp;узнаете о&nbsp;запуске данного сервиса первым!</div>
         <form action="" class="subscribe__form form">
-          <label for="subscribe-email" class="form__input-label">Ваш email</label><input type="email" id="subscribe-email" class="subscribe__email form__input" required>
-          <button type="submit" class="button form__button subscribe__button">Отправить</button>
+          <label for="subscribe-email" class="form__input-label">
+            <input type="email" id="subscribe-email" class="subscribe__email form__input form__input--subscribe" placeholder=" " required autocomplite>
+            <span class="form__placeholder form__placeholder--subscribe">Ваш email</span>
+          </label>
+          <button type="submit" class="button form__button form__button--subscribe">Отправить</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="page-wrapper">
-      <div class="footer__logo logo"><a href="#" class="go_to" data-href="#first-screen"><img src="img/logo.png" srcset="img/logo-2x.png 2x" width="200" alt=""></a></div>
-      <ul class="footer__menu mainmenu">
-        <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#intro">О сервисе</a></li>
-        <li class="mainmenu__item"><a href="#" class="mainmenu__link">Функции</a></li>
-        <li class="mainmenu__item marked"><a href="#" class="mainmenu__link">Возможности</a></li>
-        <li class="mainmenu__item"><a href="#" class="mainmenu__link">Специалистам</a></li>
-        <li class="mainmenu__item"><a href="tel:88005004549" class="mainmenu__link">88005004549</a></li>
-      </ul>
+    <div class="page-wrapper page-wrapper--footer">
+      <div class="footer__container">
+        <div class="footer__logo logo"><a href="#" class="go_to" data-href="#first-screen"><img src="img/logo_footer.png" srcset="img/logo_footer-2x.png 2x" width="160" alt="Мое здоровье"></a></div>
+        <ul class="footer__menu mainmenu">
+          <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#intro">О сервисе</a></li>
+          <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#functions">Функции</a></li>
+          <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#oppotunities">Возможности</a></li>
+          <li class="mainmenu__item"><a href="#" class="mainmenu__link go_to" data-href="#specialists">Специалистам</a></li>
+          <li class="mainmenu__item"><a href="tel:88005004549" class="mainmenu__link">88005004549</a></li>
+        </ul>
+      </div>
+      <div class="footer__dev">Разработка сайта <a href="" target="_blank">Redsoft</a></div>
     </div>
-    <div class="footer__dev">Разработка сайта <a href="" target="_blank">Redsoft</a></div>
+    
   </footer>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/scripts.js"></script>
